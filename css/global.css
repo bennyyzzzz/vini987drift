@@ -1,0 +1,35 @@
+:root{
+
+    /* colors */
+    --first-color: #FF0066;
+    --second-color: #212121;
+    --third-color: #E6CC00;
+    --fourth-color: #fff;
+
+    /* font */
+    --first-fmly: "Orbitron",  sans-serif;
+    --second-fmly: "Oxanium", sans-serif;
+
+    --h2-fmly: var(--first-fmly);
+    --h2-ft: 2rem bolder;
+    --h2-color: var(--fourth-color);
+    --h2-destack: var(--third-color);
+
+    --h3-fmly: var(--second-fmly);
+    --h3-ft: 1.8rem bolder;
+    --h3-color: var(--fourth-color);
+    --h3-destack: var(--third-color);
+
+    --p-fmly: "Oxanium", sans-serif;
+    --p-ft: .8rem;
+    --p-color: var(--fourth-color);
+
+    /* structure */
+    --bg-color: var(--second-color);
+
+    --btn-cnt-color: var(--third-color);
+    --font-btn-cnt-color: var(--second-color);
+    
+    --btn-prdt-color: var(--first-color);
+    --font-btn-prdt-color: var(--third-color);
+}
