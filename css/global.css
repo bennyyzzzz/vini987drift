@@ -1,9 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root{
 
     /* colors */
     --first-color: #FF0066;
     --second-color: #212121;
-    --third-color: #E6CC00;
+    --third-color: #e6cc00;
     --fourth-color: #fff;
 
     /* font */
@@ -29,7 +41,19 @@
 
     --btn-cnt-color: var(--third-color);
     --font-btn-cnt-color: var(--second-color);
-    
+
     --btn-prdt-color: var(--first-color);
     --font-btn-prdt-color: var(--third-color);
+}
+
+@media (min-width: 720px) {
+    .mobile{
+        display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .desktop{
+        display: none;
+    }
 }
