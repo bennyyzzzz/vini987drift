@@ -2,6 +2,7 @@
     background-color: var(--first-color);
 
     padding: .6rem;
+    width: 100vw;
 
     display: flex;
     align-items: center;
@@ -44,7 +45,7 @@ a {
         left: .3rem;
         z-index: 1;
 
-        transition: 0.3s ease;
+        transition: 0.1s ease;
     }
 
     & .layer-01 {
@@ -99,16 +100,9 @@ h1 {
 
     & img{
         max-width: 1.6rem;
-        transition: 0.3s ease;
     }
 }
 
 .btn-cnct:hover {
-    padding: .6rem 1.1rem;
-    background-color: var(--second-color);
-    color: var(--third-color);
-
-    & img{
-        fill: rgb(230, 204, 0);
-    }
+    padding: .3rem .6rem;
 }
