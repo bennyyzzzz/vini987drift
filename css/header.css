@@ -106,3 +106,29 @@ h1 {
 .btn-cnct:hover {
     padding: .3rem .6rem;
 }
+
+/* mobile */
+
+@media (max-width: 720px){
+    .header-lp{
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+    }
+
+    .btn-mode{
+        grid-column: 1;
+        font-size: .6rem;
+
+        & div {
+            width: 4.6rem;
+            height: 1.8rem;
+            padding: .3rem 1.4rem;
+        }
+    }
+
+    h1 {
+        font-size: 1.4rem;
+        grid-column: 2;
+    }
+}

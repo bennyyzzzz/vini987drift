@@ -48,16 +48,20 @@
 
 body {
     background-color: var(--second-color);
+
+    overflow-x: hidden;
 }
 
-@media (min-width: 720px) {
-    .mobile{
+@media (max-width: 719px) {
+    .desktop.img-top,
+    .desktop {
         display: none;
     }
 }
 
-@media (max-width: 720px) {
-    .desktop{
+@media (min-width: 720px) {
+    .mobile.img-top,
+    .mobile {
         display: none;
     }
 }

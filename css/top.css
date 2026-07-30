@@ -5,11 +5,10 @@
 
     position: relative;
 
-    width: 100vw;
+    width: 100%;
 
     & .img-top {
         width: 100vw;
-        display: block;
 
         filter: brightness(56%);
     }
@@ -65,5 +64,13 @@
 
     100% {
         transform: translateX(-50%);
+    }
+}
+
+/* mobile */
+
+@media (max-width: 720px){
+    .banner-bt .carroussel-bt {
+        gap: 2rem;
     }
 }
