@@ -1,0 +1,47 @@
+.button-main{
+    text-align: center;
+
+    .button-title{
+        font-family: var(--second-fmly);
+        color: var(--first-color);
+        font-weight: bolder;
+        font-size: 1.6rem;
+        
+    }
+
+    div{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            cursor: pointer;
+
+            margin-top: 1rem;
+        }
+
+        .button-cnt{
+            font-family: var(--second-fmly);
+            font-weight: bolder;
+
+            padding: .8rem .4rem;
+
+            background-color: var(--third-color);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            transition: .2s ease;
+
+            img{
+                margin-right: .6rem;
+            }
+        }
+
+        .button-cnt:hover{
+            padding: .9rem .5rem;
+        }
+    }
+}
