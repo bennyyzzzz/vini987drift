@@ -27,14 +27,15 @@
     --h2-color: var(--fourth-color);
     --h2-destack: var(--third-color);
 
-    --h3-fmly: var(--second-fmly);
-    --h3-ft: 1.8rem bolder;
-    --h3-color: var(--fourth-color);
+    --h3-fmly: var(--first-fmly);
+    --h3-ft: 2rem;
+    --h3-color: var(--first-color);
     --h3-destack: var(--third-color);
 
-    --p-fmly: "Oxanium", sans-serif;
-    --p-ft: .8rem;
+    --p-fmly: var(--second-fmly);
+    --p-ft: 1.6rem;
     --p-color: var(--fourth-color);
+    --p-destack: var(--third-color);
 
     /* structure */
     --bg-color: var(--second-color);
@@ -63,5 +64,36 @@ body {
     .mobile.img-top,
     .mobile {
         display: none;
+    }
+}
+
+/* text */
+
+h3 {
+    font-family: var(--h3-fmly);
+    color: var(--h3-color);
+    font-size: var(--h3-ft);
+
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: var(--p-fmly);
+    color: var(--p-color);
+    font-size: var(--p-ft);
+}
+
+p span {
+    color: var(--p-destack);
+    font-weight: bold;
+}
+
+@media (max-width: 720px){
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
     }
 }
