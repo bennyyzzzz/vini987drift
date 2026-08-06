@@ -75,7 +75,25 @@
                     <div class="img-layer-03"></div>
                 </div>
             </div>
+
+            <!-- modelo 3d -->
+
+            <div class="main-model">
+                <div class="model" id="model3d">
+                    <div class="model-status" id="model3dStatus">Carregando modelo 3D...</div>
+                </div>
+            </div>
         </main>
     </div>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module" src="js/vinidrift3d.js"></script>
 </body>
 </html>
