@@ -1,27 +1,25 @@
 .button-main{
     text-align: center;
-
-    .button-title{
+}
+.button-main .button-title{
         font-family: var(--second-fmly);
         color: var(--first-color);
         font-weight: bolder;
         font-size: 1.6rem;
         
     }
-
-    div{
+.button-main div{
 
         display: flex;
         align-items: center;
         justify-content: center;
-
-        a {
+    }
+.button-main div a {
             cursor: pointer;
 
             margin-top: 1rem;
         }
-
-        .button-cnt{
+.button-main div .button-cnt{
             font-family: var(--second-fmly);
             font-weight: bolder;
 
@@ -34,14 +32,10 @@
             justify-content: center;
 
             transition: .2s ease;
-
-            img{
+        }
+.button-main div .button-cnt img{
                 margin-right: .6rem;
             }
-        }
-
-        .button-cnt:hover{
+.button-main div .button-cnt:hover{
             padding: 1rem .7rem;
         }
-    }
-}

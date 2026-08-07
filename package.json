@@ -1,0 +1,13 @@
+{
+  "name": "vini987drift",
+  "private": true,
+  "scripts": {
+    "build": "postcss css-src/*.css --dir css --config postcss.config.js",
+    "watch": "postcss css-src/*.css --dir css --config postcss.config.js --watch"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "postcss-nesting": "^12.1.0"
+  }
+}

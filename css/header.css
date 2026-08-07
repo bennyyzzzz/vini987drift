@@ -9,12 +9,16 @@
     justify-content: space-around;
 
     /* mobile */
-    @media (max-width: 720px) {
+}
+
+@media (max-width: 720px) {
+
+.header-lp {
         display: grid;
         grid-template-columns: 1fr auto 1fr;
         align-items: center;
-    }
 }
+    }
 
 a {
     text-decoration: none;
@@ -32,8 +36,9 @@ a {
     cursor: pointer;
 
     transition: 0.3s ease;
+}
 
-    div {
+.btn-mode div {
         width: 8.6rem;
         height: 1.8rem;
         padding: .3rem 1.4rem;
@@ -44,7 +49,7 @@ a {
         text-align: center;
     }
 
-    .layer-02 {
+.btn-mode .layer-02 {
         background-color: var(--third-color);
 
         position: absolute;
@@ -55,7 +60,7 @@ a {
         transition: 0.1s ease;
     }
 
-    .layer-01 {
+.btn-mode .layer-01 {
         background-color: var(--second-color);
         position: relative;
         z-index: 2;
@@ -63,46 +68,53 @@ a {
         transition: 0.3s ease;
     }
 
-    &:hover .layer-02 {
+.btn-mode:hover .layer-02 {
         background-color: var(--second-color);
 
         top: .5rem;
         left: .5rem;
     }
 
-    &:hover .layer-01 {
+.btn-mode:hover .layer-01 {
         background-color: var(--third-color);
         position: relative;
         z-index: 2;
     }
 
-    /* mobile */
-    @media (max-width: 720px) {
+/* mobile */
+
+@media (max-width: 720px) {
+
+.btn-mode {
         grid-column: 1;
         font-size: .6rem;
+}
 
-        & div {
+        .btn-mode div {
             width: 4.6rem;
             height: 1.8rem;
             padding: .3rem 1.4rem;
         }
     }
-}
 
 h1 {
     font-family: var(--first-fmly);
     color: var(--fourth-color);
+}
 
-    span {
+h1 span {
         color: var(--third-color);
     }
 
-    /* mobile */
-    @media (max-width: 720px) {
+/* mobile */
+
+@media (max-width: 720px) {
+
+h1 {
         font-size: 1.4rem;
         grid-column: 2;
-    }
 }
+    }
 
 .btn-cnct {
     background-color: var(--third-color);
@@ -120,12 +132,12 @@ h1 {
     cursor: pointer;
 
     transition: 0.3s ease;
+}
 
-    img {
+.btn-cnct img {
         max-width: 1.6rem;
     }
 
-    &:hover {
+.btn-cnct:hover {
         padding: .3rem .6rem;
     }
-}
