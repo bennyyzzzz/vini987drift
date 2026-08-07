@@ -55,3 +55,40 @@
         }
     }
 }
+
+@media (max-width: 720px){
+    .about-publ {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 2rem 2rem;
+
+        .about-text {
+            max-width: 21.5rem;
+
+            margin-bottom: .8rem;
+        }
+
+        .about-img {
+            width: 320px;
+            height: 423px;
+
+            margin-right: 0rem;
+
+            img {
+                max-width: 20rem;
+            }
+
+            .about-layer-02 {
+                width: 320px;
+                height: 423px;
+            }
+
+            .about-layer-03 {
+                width: 320px;
+                height: 423px;
+            }
+        }
+    }
+}

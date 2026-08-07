@@ -18,6 +18,10 @@
     --third-color: #e6cc00;
     --fourth-color: #fff;
 
+    /* tema (light/dark) — únicas variáveis que mudam entre os modos */
+    --bg-color: var(--second-color);
+    --text-color: var(--fourth-color);
+
     /* font */
     --first-fmly: "Orbitron",  sans-serif;
     --second-fmly: "Oxanium", sans-serif;
@@ -34,11 +38,8 @@
 
     --p-fmly: var(--second-fmly);
     --p-ft: 1.6rem;
-    --p-color: var(--fourth-color);
+    --p-color: var(--text-color);
     --p-destack: var(--third-color);
-
-    /* structure */
-    --bg-color: var(--second-color);
 
     --btn-cnt-color: var(--third-color);
     --font-btn-cnt-color: var(--second-color);
@@ -47,10 +48,17 @@
     --font-btn-prdt-color: var(--third-color);
 }
 
+/* light mode — ativado via classe no <html>, controlada pelo botão do header */
+html.light-mode {
+    --bg-color: #f4f4f4;
+    --text-color: #1a1a1a;
+}
+
 body {
-    background-color: var(--second-color);
+    background-color: var(--bg-color);
 
     overflow-x: hidden;
+    transition: background-color 0.5s ease;
 }
 
 @media (max-width: 719px) {
@@ -81,6 +89,8 @@ p {
     font-family: var(--p-fmly);
     color: var(--p-color);
     font-size: var(--p-ft);
+
+    transition: color 0.5s ease;
 }
 
 p span {
